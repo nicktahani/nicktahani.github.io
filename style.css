@@ -1,91 +1,51 @@
 body {
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    overflow-x: hidden;
-    position: relative;
+    font-weight: 300;
 }
 
 html {
   overflow-x: hidden;
 }
 
-.top {
-  text-align: center;
+h1 {
+  font-weight: 300;
 }
 
 .heading {
   display: flex;
+  margin: auto;
+  max-width: 480px;
   flex-direction: column;
-  background-color: #4A5054;
-  padding-top: 6vh;
-  color: white;
+  color: #000;
   font-size: 1.2em;
-  padding-bottom: 7vh;
-  letter-spacing: 1px;
 }
 
 .desktop {
-  font-size: 2.0em;
+  font-size: 1.5em;
+  color: darkslateblue;
 }
 
 .mobile {
   display:none;
 }
 
-@media only screen and (max-width: 768px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    font-size: 1.5em;
-    display: block;
-  }
-
-}
-
 .heading a {
-  padding-top: 3vh;
-  padding-right: 3vh;
-  display: inline-block;
-  text-decoration: none;
-  list-style-type: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 200;
+  margin-right: 2.5em;
   font-size: 15px;
 }
 
-.heading h1 {
-  text-transform: uppercase;
-}
-
-#github:hover a, #linkedin:hover a, #resume:hover a {
-  color: #728FCE;
-}
-
-.gallery {
+.icons {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: center;
-  padding-top: 10vh;
+  padding-top: 1em;
 }
 
-.gallery a {
-  flex-basis: 125px;
-  max-width: 300px;
-  margin: 40px;
+.fa-github, .fa-linkedin-in, .fa-envelope {
+  color: #000;
 }
 
-#contact {
-  text-align: center;
-  padding-top: 20px;
+.fa-github:hover, .fa-linkedin-in:hover, .fa-envelope:hover {
+  color: #778899;
 }
 
-.gallery img {
-  opacity: 0.5;
-}
 
-.gallery img:hover {
-  opacity: 1;
-}
+
