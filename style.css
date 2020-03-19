@@ -25,6 +25,10 @@ h1 {
   color: darkslateblue;
 }
 
+.info {
+  line-height: 2rem;
+}
+
 .mobile {
   display:none;
 }
