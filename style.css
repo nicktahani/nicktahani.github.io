@@ -1,6 +1,5 @@
 body {
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -11,29 +10,27 @@ h1 {
   font-weight: 300;
 }
 
-.heading {
+.content {
   display: flex;
   margin: auto;
   max-width: 480px;
   flex-direction: column;
   color: #000;
   font-size: 1.2em;
+  padding: 2em;
 }
 
-.desktop {
+.heading {
   font-size: 1.5em;
-  color: darkslateblue;
+  color: #fff;
+  background-color: #4e4e4e;
 }
 
 .info {
   line-height: 2rem;
 }
 
-.mobile {
-  display:none;
-}
-
-.heading a {
+.content a {
   margin-right: 2.5em;
   font-size: 15px;
 }
@@ -49,6 +46,20 @@ h1 {
 
 .fa-github:hover, .fa-linkedin-in:hover, .fa-envelope:hover {
   color: #778899;
+}
+
+@media only screen and (max-width : 480px) {
+  .heading {
+    font-size: 1em;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 1.5em;
+  }
 }
 
 
