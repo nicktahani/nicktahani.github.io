@@ -13,7 +13,7 @@ h1 {
 .content {
   display: flex;
   margin: auto;
-  max-width: 480px;
+  max-width: 475px;
   flex-direction: column;
   color: #000;
   font-size: 1.2em;
@@ -31,21 +31,22 @@ h1 {
 }
 
 .content a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid;
   margin-right: 2.5em;
-  font-size: 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.content a:hover {
+  transition: ease-in 100ms;
+  font-size: 1.5rem;
 }
 
 .icons {
   display: flex;
   padding-top: 1em;
-}
-
-.fa-github, .fa-linkedin-in, .fa-envelope {
-  color: #000;
-}
-
-.fa-github:hover, .fa-linkedin-in:hover, .fa-envelope:hover {
-  color: #778899;
 }
 
 @media only screen and (max-width : 480px) {
