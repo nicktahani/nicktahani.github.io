@@ -27,9 +27,10 @@ h3 {
 }
 
 .heading {
-  font-size: 1.5em;
+  font-size: 1.5em !important;
   color: #fff;
-  background-color: #4e4e4e;
+  background-color: #000;
+  font-weight: 300;
 }
 
 .info {
@@ -73,7 +74,7 @@ h3 {
 }
 
 .card-header img {
-	/* object-fit: cover; */
+	object-fit: cover;
 	height: 200px;
 	width: 100%;
 }

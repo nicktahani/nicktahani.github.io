@@ -3,10 +3,5 @@ const el = document.querySelectorAll('.content a')
 
 const getRandColor = () => colors[Math.round(Math.random() * colors.length)]
 
-const setBorderColor = () => {
-  Array.from(el).forEach(e => {
-    e.style.borderBottomColor = getRandColor()
-  })
-}
-setBorderColor()
+Array.from(el).forEach(e => e.style.borderBottomColor = getRandColor())
 
